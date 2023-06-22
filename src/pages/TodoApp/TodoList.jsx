@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TodoList = ({ todos, onDelete }) => {
-  if (!todos || !Array.isArray(todos)) {
+  if (!Array.isArray(todos)) {
     return null; 
   }
 
