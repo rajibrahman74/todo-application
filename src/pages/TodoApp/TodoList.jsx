@@ -1,6 +1,10 @@
 import React from 'react';
 
 const TodoList = ({ todos, onDelete }) => {
+  if (!todos) {
+    return null; 
+  }
+  
   return (
     <ul className="list-none p-0">
       {todos.map((todo) => (
